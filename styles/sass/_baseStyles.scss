@@ -1,0 +1,47 @@
+@import "./variables";
+
+.wrapper {
+    width: 80%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+button {
+    // Default button styles
+    background-color: $buttonColor;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $buttonSelectedColor;
+    }
+
+    &:focus {
+        background-color: $buttonSelectedColor;
+    }
+}
+
+
+a {
+        padding: 18px 36px;
+        // border: 2px solid $primary;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        text-align: center;
+        transition: 0.3s;
+
+        &:hover {
+            color: $secondary;
+        }
+
+        &:focus {
+            color: $secondary;
+        }
+    
+}
