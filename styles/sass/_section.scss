@@ -1,0 +1,100 @@
+.whois,
+.about,
+.journey {
+    background-color: $secondary;
+}
+
+.favorite,
+.travel {
+    display: flex;
+   
+    .flexContainer {
+        display: flex;
+        width: 50vw;
+        height: 100%;
+        position: relative;
+        bottom: 1rem;
+        .imageContainer{
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            width: 80%;
+        }
+    }
+
+    .textContainer {
+        align-self: flex-end;
+        width: 50%;
+    }
+}
+
+.favorite {
+    .flexContainer{
+        justify-content: flex-end;
+        background-color: $imageBkgColor1;
+    }
+    .textContainer {
+        text-align: left;
+    }
+}
+.travel {
+    flex-direction: row-reverse;
+    .flexContainer {
+        justify-content: flex-start;
+        background-color: $imageBkgColor2;
+    }
+    .textContainer {
+        text-align: right;
+    }
+}
+
+.about  {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            .iconContainer {
+                display: block;
+                height: 32px;
+                width: 32px;
+                // border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
+   
+}
+
+.journey {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .imageContainer {
+            width: 30% ;
+        }
+    }
+}
+
+.gallery {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin: 40px 0;
+            width: 30%;
+        }
+    }
+}
+
+footer {
+    background-color: $footerBkgColor;
+
+    p {
+        text-align: center;
+        padding: 10px 0;
+        color: $secondary;
+        font-size: 1rem;
+    }
+}

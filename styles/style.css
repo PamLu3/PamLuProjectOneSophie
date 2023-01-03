@@ -264,10 +264,14 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
+  margin-top: 0px;
+  padding-top: 3rem;
 }
 
 h3 {
   font-size: 1.6rem;
+  margin-top: 0px;
+  padding-top: 1rem;
 }
 
 h4,
@@ -283,6 +287,7 @@ p {
   font-weight: normal;
   line-height: 1.6rem;
   letter-spacing: 0px;
+  margin: 0 0 30px 0;
 }
 
 ul,
@@ -323,6 +328,7 @@ button {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin: 0 0 5rem 0;
 }
 button:hover {
   background-color: #285e64;
@@ -340,10 +346,10 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  color: #f0efed;
+  color: rgb(240, 239, 237);
 }
 a:focus {
-  color: #f0efed;
+  color: rgb(240, 239, 237);
 }
 
 nav {
@@ -383,7 +389,7 @@ header .wrapper {
 }
 header .wrapper .headerContainer img {
   position: relative;
-  right: 2.4rem;
+  right: 1.4rem;
   top: 2rem;
 }
 header .wrapper .headerContainer h1 {
@@ -397,4 +403,118 @@ header .wrapper .imageContainer {
   top: 2rem;
   -webkit-box-shadow: 10px 10px white;
           box-shadow: 10px 10px white;
+}
+
+.whois,
+.about,
+.journey {
+  background-color: rgb(240, 239, 237);
+}
+
+.favorite,
+.travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.favorite .flexContainer,
+.travel .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  height: 100%;
+  position: relative;
+  bottom: 1rem;
+}
+.favorite .flexContainer .imageContainer,
+.travel .flexContainer .imageContainer {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  width: 80%;
+}
+.favorite .textContainer,
+.travel .textContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50%;
+}
+
+.favorite .flexContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #a82706;
+}
+.favorite .textContainer {
+  text-align: left;
+}
+
+.travel {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.travel .flexContainer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #f6a823;
+}
+.travel .textContainer {
+  text-align: right;
+}
+
+.about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about ul li {
+  width: 50%;
+}
+.about ul li .iconContainer {
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-color: #f6a823;
+}
+
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journey .wrapper .imageContainer {
+  width: 30%;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery ul li {
+  margin: 40px 0;
+  width: 30%;
+}
+
+footer {
+  background-color: #4f4f4f;
+}
+footer p {
+  text-align: center;
+  padding: 10px 0;
+  color: rgb(240, 239, 237);
+  font-size: 1rem;
 }

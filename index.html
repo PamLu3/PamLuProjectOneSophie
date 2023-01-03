@@ -42,7 +42,7 @@
     <!-- My Main Section -->
     <main>
         <!-- Section Who -->
-        <section>
+        <section class="whois">
             <div class="wrapper">
                 <h2>Who is sophie?</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laboriosam amet sequi illum! Sit vel eum quasi obcaecati quos perferendis, dignissimos rerum voluptas harum amet, nulla reprehenderit deserunt quis culpa quo commodi laudantium. Obcaecati odit unde vitae, nulla repudiandae modi minus cupiditate quam cum ipsum minima delectus tenetur nesciunt! Quo?</p>
@@ -50,27 +50,37 @@
             </div>
         </section>
         <!-- Section Favorite -->
-        <section class="wrapper favorite">
-            <div class="imageContainer">
-                <img src="./assets/home-image-2.jpg" alt="A dog header showing in car windows">
-            </div>
+        <section class="favorite">
+            <div class="flexContainer">
+                <div class="imageContainer">
+                    <img src="./assets/home-image-2.jpg" alt="A dog header showing in car windows">
+                </div>
+            </div>            
             <div class="textContainer">
-                <h3>Sophie's Favourite Things</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint beatae similique eligendi error explicabo magnam unde in architecto voluptatibus earum quisquam praesentium sit blanditiis non, nam a temporibus voluptate!</p>
-                <button>read more</button>
-            </div>
+                <div class="wrapper">
+                    <h3>Sophie's Favourite Things</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint beatae similique eligendi error explicabo
+                        magnam unde in architecto voluptatibus earum quisquam praesentium sit blanditiis non, nam a temporibus
+                        voluptate!</p>
+                    <button>read more</button>
+                </div>                
+            </div>            
         </section>
         <!-- Section Travel -->
-        <section class="wrapper travel">
-            <div class="imageContainer">
-                <img src="./assets/home-image-3.jpg" alt="Many blue reclinig chairs and orange umbrellas">
-            </div>
+        <section class="travel">
+            <div class="flexContainer">
+                <div class="imageContainer">
+                    <img src="./assets/home-image-3.jpg" alt="Many blue reclining chairs and orange umbrellas">
+                </div>
+            </div>            
             <div class="textContainer">
-                <h3>Where she's travelled</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint beatae similique eligendi error explicabo
-                    magnam unde in architecto voluptatibus earum quisquam praesentium sit blanditiis non, nam a temporibus
-                    voluptate!</p>
-                <button>read more</button>
+                <div class="wrapper">
+                    <h3>Where she's travelled</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint beatae similique eligendi error explicabo
+                        magnam unde in architecto voluptatibus earum quisquam praesentium sit blanditiis non, nam a temporibus
+                        voluptate!</p>
+                    <button>read more</button>
+                </div>                
             </div>
         </section>
         <!-- Section About -->
@@ -78,25 +88,45 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <i class="fa-sharp fa-solid fa-image"></i>
-                        <h3>Photos</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti nulla, harum reiciendis fuga at consectetur, doloremque quasi cumque ab omnis. Vel eligendi placeat nemo!
-                        </p>
+                        <div class="iconContainer">
+                            <i class="fa-sharp fa-solid fa-image"></i>
+                        </div>
+                        <div class="textContainer">
+                            <h3>Photos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti nulla, harum reiciendis fuga at
+                                consectetur, doloremque quasi cumque ab omnis. Vel eligendi placeat nemo!
+                            </p>
+                        </div>                        
                     </li>
                     <li>
-                        <i class="fa-sharp fa-solid fa-user"></i>
-                        <h3>About</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos, ratione necessitatibus, deserunt voluptatum quaerat officia neque reiciendis, placeat quo minus atque nobis vitae suscipit.</p>
+                        <div class="iconContainer">
+                            <i class="fa-sharp fa-solid fa-user"></i>
+                        </div>
+                        <div class="textContainer">
+                            <h3>About</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos, ratione necessitatibus, deserunt voluptatum
+                                quaerat officia neque reiciendis, placeat quo minus atque nobis vitae suscipit.</p>
+                        </div>                        
                     </li>
                     <li>
-                        <i class="fa-sharp fa-solid fa-desktop"></i>
-                        <h3>Blog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, suscipit veritatis. Nemo eum doloremque cupiditate in quos debitis recusandae. Non expedita tenetur aliquid autem libero?</p>
+                        <div class="iconContainer">
+                            <i class="fa-sharp fa-solid fa-desktop"></i>
+                        </div>
+                        <div class="textContainer">
+                            <h3>Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, suscipit veritatis. Nemo eum doloremque cupiditate
+                                in quos debitis recusandae. Non expedita tenetur aliquid autem libero?</p>
+                        </div>                        
                     </li>
                     <li>
-                        <i class="fa-sharp fa-solid fa-phone-flip"></i>
-                        <h3>Get in Touch</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam assumenda enim quasi voluptatibus! Ratione placeat commodi fugiat nulla obcaecati laborum quo at odio inventore.</p>
+                        <div class="iconContainer">
+                            <i class="fa-sharp fa-solid fa-phone-flip"></i>
+                        </div>
+                        <div class="textContainer">
+                            <h3>Get in Touch</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam assumenda enim quasi voluptatibus!
+                                Ratione placeat commodi fugiat nulla obcaecati laborum quo at odio inventore.</p>
+                        </div>                        
                     </li>
                 </ul>
             </div>
@@ -106,24 +136,29 @@
             <img src="./assets/home-image-4.jpg" alt="Rows of theater seats">
         </div>
         <!-- Section Journey -->
-        <section class="wrapper journey">
-            <div class="imageContainer">
-                <img src="./assets/home-image-5.jpg" alt="A lady standing in front of building">
-            </div>
-            <div class="textContainer">
-                <h3>Sophie's Journey</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui deleniti sed placeat aspernatur dolorum explicabo a nam pariatur fuga. Quisquam aperiam beatae iste eligendi deserunt veritatis assumenda ipsam tempora debitis adipisci? Repellendus laboriosam adipisci sit error praesentium nesciunt quisquam consequuntur modi? Error ullam sunt labore ducimus officiis natus, quae vero?</p>
-                <button>find out more</button>
-            </div>
+        <section class="journey">
+            <div class="wrapper">
+                <div class="imageContainer">
+                    <img src="./assets/home-image-5.jpg" alt="A lady standing in front of building">
+                </div>
+                <div class="textContainer">
+                    <h3>Sophie's Journey</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui deleniti sed placeat aspernatur dolorum explicabo a
+                        nam pariatur fuga. Quisquam aperiam beatae iste eligendi deserunt veritatis assumenda ipsam tempora debitis
+                        adipisci? Repellendus laboriosam adipisci sit error praesentium nesciunt quisquam consequuntur modi? Error ullam
+                        sunt labore ducimus officiis natus, quae vero?</p>
+                    <button>find out more</button>
+                </div>
+            </div>            
         </section>
         <!-- Gallery area -->
-        <div class="wrapper">
+        <section class="wrapper gallery">
             <ul>
                 <li><img src="./assets/home-image-6.jpg" alt="A bike with basket"></li>
                 <li><img src="./assets/home-image-7.jpg" alt="Upper part of building"></li>
                 <li><img src="./assets/home-image-8.jpg" alt="A section of umbrella of Banana Beach"></li>
             </ul>
-        </div>        
+        </section>        
     </main>
     <!-- My Footer -->
     <footer>
