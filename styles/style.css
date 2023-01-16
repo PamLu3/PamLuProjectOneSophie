@@ -418,27 +418,23 @@ header .wrapper .imageContainer {
   display: flex;
 }
 .favorite .flexContainer,
-.travel .flexContainer {
+.favorite .textContainer,
+.travel .flexContainer,
+.travel .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50vw;
   height: 100%;
   position: relative;
-  bottom: 1rem;
 }
 .favorite .flexContainer .imageContainer,
-.travel .flexContainer .imageContainer {
+.favorite .textContainer .imageContainer,
+.travel .flexContainer .imageContainer,
+.travel .textContainer .imageContainer {
   position: relative;
-  bottom: 10px;
-  right: 10px;
-  width: 80%;
-}
-.favorite .textContainer,
-.travel .textContainer {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 50%;
+  bottom: 15px;
+  right: 15px;
 }
 
 .favorite .flexContainer {
@@ -446,8 +442,10 @@ header .wrapper .imageContainer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #a82706;
+  bottom: 1.5rem;
 }
 .favorite .textContainer {
+  padding-top: 20px;
   text-align: left;
 }
 
@@ -462,11 +460,15 @@ header .wrapper .imageContainer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: #f6a823;
+  top: 1.5rem;
 }
 .travel .textContainer {
   text-align: right;
 }
 
+.about {
+  padding: 120px 0 80px 0;
+}
 .about ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,12 +478,26 @@ header .wrapper .imageContainer {
 }
 .about ul li {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .about ul li .iconContainer {
-  display: block;
+  padding: 20px;
+}
+.about ul li .iconContainer p {
+  background-color: #f6a823;
   height: 32px;
   width: 32px;
-  background-color: #f6a823;
+  border-radius: 50%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .journey .wrapper {
@@ -491,9 +507,6 @@ header .wrapper .imageContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.journey .wrapper .imageContainer {
-  width: 30%;
 }
 
 .gallery ul {

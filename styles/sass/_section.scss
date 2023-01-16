@@ -8,23 +8,18 @@
 .travel {
     display: flex;
    
-    .flexContainer {
+    .flexContainer, 
+    .textContainer {
         display: flex;
         width: 50vw;
         height: 100%;
         position: relative;
-        bottom: 1rem;
-        .imageContainer{
-            position: relative;
-            bottom: 10px;
-            right: 10px;
-            width: 80%;
-        }
-    }
 
-    .textContainer {
-        align-self: flex-end;
-        width: 50%;
+        .imageContainer {
+                position: relative;
+                bottom: 15px;
+                right: 15px;
+            }
     }
 }
 
@@ -32,8 +27,11 @@
     .flexContainer{
         justify-content: flex-end;
         background-color: $imageBkgColor1;
+        bottom: 1.5rem;
+
     }
     .textContainer {
+        padding-top: 20px;
         text-align: left;
     }
 }
@@ -42,6 +40,9 @@
     .flexContainer {
         justify-content: flex-start;
         background-color: $imageBkgColor2;
+        top: 1.5rem;
+
+
     }
     .textContainer {
         text-align: right;
@@ -49,31 +50,50 @@
 }
 
 .about  {
+    padding: 120px 0 80px 0;
     ul {
         display: flex;
         flex-wrap: wrap;
         li {
             width: 50%;
+            display: flex;
+            // flex-wrap: wrap;
+            // direction: column;
             .iconContainer {
-                display: block;
-                height: 32px;
-                width: 32px;
-                // border-radius: 50%;
-                background-color: $primary;
+                // justify-content: start;
+                // align-self: flex-start;
+                padding: 20px;
+                p{
+                    background-color: $primary;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                
+                
+                
             }
         }
     }
    
 }
 
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    }
+
 .journey {
     .wrapper {
         display: flex;
         justify-content: space-between;
 
-        .imageContainer {
-            width: 30% ;
-        }
+        // .imageContainer {
+        //     // width: 30% ;
+        // }
     }
 }
 
