@@ -401,8 +401,8 @@ header .wrapper .imageContainer {
   width: 40%;
   position: relative;
   top: 40px;
-  -webkit-box-shadow: 10px 10px white;
-          box-shadow: 10px 10px white;
+  -webkit-box-shadow: 10px 10px rgb(240, 239, 237);
+          box-shadow: 10px 10px rgb(240, 239, 237);
 }
 
 .whois,
@@ -539,4 +539,61 @@ footer p {
   padding: 10px 0;
   color: rgb(240, 239, 237);
   font-size: 1rem;
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image-1.jpg");
+  height: 300px;
+  background-size: cover;
+}
+.contactHeader h1 {
+  position: relative;
+  bottom: -195px;
+}
+
+.contactPage {
+  background-color: rgb(240, 239, 237);
+  padding-top: 100px;
+}
+.contactPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactPage .wrapper .contactInfoContainer {
+  width: 40%;
+  height: 260px;
+  background-color: white;
+  padding: 20px;
+}
+.contactPage .wrapper .formContainer {
+  padding-left: 30px;
+  width: 60%;
+}
+.contactPage .wrapper .formContainer .contactForm .inputInSameLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactPage .wrapper .formContainer .contactForm input[type=text],
+.contactPage .wrapper .formContainer .contactForm input[type=email] {
+  border: 0;
+  padding: 20px;
+  width: 49%;
+  margin-bottom: 20px;
+}
+.contactPage .wrapper .formContainer .contactForm textarea {
+  padding: 30px 20px;
+}
+.contactPage .wrapper .formContainer .contactForm textarea,
+.contactPage .wrapper .formContainer .contactForm button {
+  border: 0;
+  margin-bottom: 20px;
+  width: 100%;
 }
