@@ -389,18 +389,18 @@ header .wrapper {
 }
 header .wrapper .headerContainer img {
   position: relative;
-  right: 1.4rem;
-  top: 2rem;
+  right: 28px;
+  top: 40px;
 }
 header .wrapper .headerContainer h1 {
   position: relative;
-  left: 1rem;
-  bottom: 3rem;
+  left: 20px;
+  bottom: 60px;
 }
 header .wrapper .imageContainer {
   width: 40%;
   position: relative;
-  top: 2rem;
+  top: 40px;
   -webkit-box-shadow: 10px 10px white;
           box-shadow: 10px 10px white;
 }
@@ -416,22 +416,11 @@ header .wrapper .imageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.favorite .flexContainer,
-.favorite .textContainer,
-.travel .flexContainer,
-.travel .textContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50vw;
   height: 100%;
   position: relative;
 }
-.favorite .flexContainer .imageContainer,
-.favorite .textContainer .imageContainer,
-.travel .flexContainer .imageContainer,
-.travel .textContainer .imageContainer {
+.favorite .imageContainer,
+.travel .imageContainer {
   position: relative;
   bottom: 15px;
   right: 15px;
@@ -445,7 +434,6 @@ header .wrapper .imageContainer {
   bottom: 1.5rem;
 }
 .favorite .textContainer {
-  padding-top: 20px;
   text-align: left;
 }
 
@@ -461,6 +449,11 @@ header .wrapper .imageContainer {
           justify-content: flex-start;
   background-color: #f6a823;
   top: 1.5rem;
+}
+.travel .flexContainer .wrapper {
+  max-width: 504px;
+  margin: 0 20% 0 10%;
+  width: 70%;
 }
 .travel .textContainer {
   text-align: right;
@@ -493,9 +486,11 @@ header .wrapper .imageContainer {
   text-align: center;
 }
 
-img {
+figure {
+  margin: 0 0 0 0;
+}
+figure img {
   width: 100%;
-  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -507,9 +502,23 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.journey .wrapper .imageContainer {
+  width: 24%;
+  position: relative;
+  -webkit-box-shadow: 10px 10px #f6a823;
+          box-shadow: 10px 10px #f6a823;
+}
+.journey .wrapper .textContainer {
+  margin: 60px 0;
+  width: 66%;
 }
 
 .gallery ul {
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +527,7 @@ img {
           justify-content: space-between;
 }
 .gallery ul li {
-  margin: 40px 0;
+  margin: 60px 0;
   width: 30%;
 }
 

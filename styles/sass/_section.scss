@@ -8,11 +8,10 @@
 .travel {
     display: flex;
    
-    .flexContainer, 
-    .textContainer {
-        display: flex;
-        width: 50vw;
-        height: 100%;
+
+
+
+     height: 100%;
         position: relative;
 
         .imageContainer {
@@ -20,7 +19,6 @@
                 bottom: 15px;
                 right: 15px;
             }
-    }
 }
 
 .favorite {
@@ -28,11 +26,15 @@
         justify-content: flex-end;
         background-color: $imageBkgColor1;
         bottom: 1.5rem;
-
     }
     .textContainer {
-        padding-top: 20px;
+        // padding:  20px 0 20px 20px;
         text-align: left;
+        // .wrapper {
+        //     // max-width: 504px;
+        //     margin: 0 20% 0 20px;
+        //     width: calc(80% - 20px);
+        // }
     }
 }
 .travel {
@@ -41,6 +43,11 @@
         justify-content: flex-start;
         background-color: $imageBkgColor2;
         top: 1.5rem;
+        .wrapper {
+                max-width: 504px;
+                margin: 0 20% 0 10%;
+                width: 70%;
+            }
 
 
     }
@@ -80,29 +87,38 @@
 }
 
 
-img {
+figure{
+    margin: 0 0 0 0;
+ img {
     width: 100%;
-    height: 500px;
     object-fit: cover;
     }
-
+}
 .journey {
     .wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        // .imageContainer {
-        //     // width: 30% ;
-        // }
+        .imageContainer {
+          width: 24%;
+          position:  relative;
+          box-shadow: 10px 10px $primary;
+        }
+        .textContainer {
+            margin: 60px 0;
+            width: 66%;
+        }
     }
 }
 
 .gallery {
     ul {
+        padding-left: 0;
         display: flex;
         justify-content: space-between;
         li {
-            margin: 40px 0;
+            margin: 60px 0;
             width: 30%;
         }
     }
