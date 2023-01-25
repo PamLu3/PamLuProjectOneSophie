@@ -249,7 +249,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+a,
 button,
 nav {
   text-transform: uppercase;
@@ -541,14 +541,23 @@ footer p {
   font-size: 1rem;
 }
 
-.contactHeader {
-  background-image: url("../assets/contact-image-1.jpg");
+.contactHeader,
+.blogHeader {
   height: 300px;
   background-size: cover;
 }
-.contactHeader h1 {
+.contactHeader h1,
+.blogHeader h1 {
   position: relative;
   bottom: -195px;
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
 }
 
 .contactPage {
@@ -565,9 +574,22 @@ footer p {
 }
 .contactPage .wrapper .contactInfoContainer {
   width: 40%;
-  height: 260px;
+  height: 320px;
   background-color: white;
   padding: 20px;
+}
+.contactPage .wrapper .contactInfoContainer .iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contactPage .wrapper .contactInfoContainer .iconContainer img {
+  display: block;
+  padding: 20px 20px 10px 0;
 }
 .contactPage .wrapper .formContainer {
   padding-left: 30px;
@@ -597,3 +619,102 @@ footer p {
   margin-bottom: 20px;
   width: 100%;
 }
+
+.blogPage {
+  background-color: rgb(240, 239, 237);
+  padding-top: 100px;
+}
+.blogPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogPage .wrapper aside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogPage .wrapper aside div {
+  margin-bottom: 20px;
+  height: auto;
+  background-color: white;
+  padding: 25px;
+}
+.blogPage .wrapper aside .recentPosts p {
+  padding-left: 40px;
+}
+.blogPage .wrapper article {
+  width: 70%;
+  padding-left: 30px;
+  background-color: rgb(240, 239, 237);
+}
+.blogPage .wrapper article span {
+  color: #285e64;
+  font-style: italic;
+}
+.blogPage .wrapper article .blogContent,
+.blogPage .wrapper article .comment02 {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #f6a823;
+}
+.blogPage .wrapper article div {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 25px;
+}
+.blogPage .wrapper article .blogComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogPage .wrapper article .blogComment h5 {
+  color: #285e64;
+}
+.blogPage .wrapper article .blogComment .imageContainer {
+  width: 16%;
+  padding-right: 20px;
+}
+.blogPage .wrapper article .blogComment .textContainer {
+  width: 88%;
+  padding-left: 0;
+}
+.blogPage .wrapper article .blogComment .textContainer h5 {
+  margin-top: 0;
+}
+.blogPage .wrapper article .formContainer .contactForm .inputInSameLine {
+  background-color: rgb(240, 239, 237);
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogPage .wrapper article .formContainer .contactForm input[type=text],
+.blogPage .wrapper article .formContainer .contactForm input[type=email] {
+  border: 0;
+  padding: 20px;
+  width: 48%;
+  margin: 20px 0 0 0;
+}
+.blogPage .wrapper article .formContainer .contactForm textarea {
+  padding: 30px 20px;
+}
+.blogPage .wrapper article .formContainer .contactForm textarea,
+.blogPage .wrapper article .formContainer .contactForm button {
+  border: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* 320px mobile devices */

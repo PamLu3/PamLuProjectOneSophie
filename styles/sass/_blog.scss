@@ -1,0 +1,101 @@
+   .blogPage {
+       background-color: $secondary;
+       padding-top: 100px;
+
+       .wrapper {
+           display: flex;
+           justify-content: space-between;
+
+           aside {
+            width: 30%;
+            display: flex;
+            flex-direction: column;               
+            div { 
+                margin-bottom: 20px;  
+                height: auto;
+                background-color: white;
+                padding: 25px;
+               }
+            .recentPosts {
+                p {
+                    padding-left: 40px;
+                }
+            }
+           }
+
+           article {
+                width: 70%;
+                padding-left: 30px;
+                background-color: $secondary;
+                span {
+                    color: $buttonSelectedColor;
+                    font-style: italic;
+                }
+                .blogContent,
+                .comment02 {
+                    border-bottom-width: 5px;
+                    border-bottom-style: solid;
+                    border-bottom-color: $primary;
+                }
+                div {
+                    margin-bottom: 20px;
+                    background-color: white;
+                    padding: 25px;
+                }          
+                .blogComment {
+                        display: flex;
+                        // justify-content: space-between;
+                        // align-items: center;
+                        h5 {
+                            color: $buttonSelectedColor;
+                        }
+                        .imageContainer {
+                            width: 16%;
+                            padding-right: 20px;
+                        }
+
+                        .textContainer {
+                            width: 88%;
+                            padding-left: 0;
+                            h5 {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+
+           .formContainer { 
+
+               .contactForm {
+                
+                   .inputInSameLine {
+                    background-color: $secondary;
+                        padding: 0;
+                       display: flex;
+                       justify-content: space-between;
+                   }
+                   
+                   input[type=text],
+                   input[type=email] {
+                        border: 0;
+                       padding: 20px;
+                       width: 48%;
+                       margin: 20px 0 0 0;
+                   }
+
+                   textarea {
+                       padding: 30px 20px;
+                   }
+
+                   textarea,
+                   button {
+                       border: 0;
+                       margin-bottom: 20px;
+                       width: 100%;
+                   }
+
+               }
+           }
+        }
+       }
+   }
