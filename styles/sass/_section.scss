@@ -6,33 +6,39 @@
 
 .favorite,
 .travel {
-
-    display: flex;
-   
-     height: 100%;
-        position: relative;
-
-        .imageContainer {
+        display: flex;
+        height: 420px; 
+        .textContainer,
+        .flexContainer {
+            width: 50%;
+            height: 100%;
+        }
+        .flexContainer{
+            position: relative;
+            height: 390px;
+            .imageContainer {              
                 position: relative;
                 bottom: 15px;
-                right: 15px;
+                height: 100%;
+                img {
+                    width: 100%;                  
+                }
             }
+        }
 }
-
 .favorite {
     .flexContainer{
         justify-content: flex-end;
         background-color: $imageBkgColor1;
-        bottom: 1.5rem;
+        bottom: 15px;
+        .imageContainer {
+            width: calc(80%);
+            left: calc(20% - 15px);
+        }
     }
     .textContainer {
-        // padding:  20px 0 20px 20px;
+        padding: 50px 10% 20px 50px;
         text-align: left;
-        // .wrapper {
-        //     // max-width: 504px;
-        //     margin: 0 20% 0 20px;
-        //     width: calc(80% - 20px);
-        // }
     }
 }
 .travel {
@@ -40,16 +46,14 @@
     .flexContainer {
         justify-content: flex-start;
         background-color: $imageBkgColor2;
-        top: 1.5rem;
-        .wrapper {
-                max-width: 504px;
-                margin: 0 20% 0 10%;
-                width: 70%;
-            }
-
-
+        top: 15px;
+        .imageContainer{
+            width: 80%;
+            right: 15px;
+        }
     }
     .textContainer {
+        padding: 50px 65px 50px 10%;
         text-align: right;
     }
 }
