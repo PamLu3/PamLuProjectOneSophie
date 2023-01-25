@@ -417,7 +417,7 @@ header .wrapper .imageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 420px;
+  height: 520px;
 }
 .favorite .textContainer,
 .favorite .flexContainer,
@@ -429,7 +429,7 @@ header .wrapper .imageContainer {
 .favorite .flexContainer,
 .travel .flexContainer {
   position: relative;
-  height: 390px;
+  height: 490px;
 }
 .favorite .flexContainer .imageContainer,
 .travel .flexContainer .imageContainer {
