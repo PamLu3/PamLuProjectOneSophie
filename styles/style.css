@@ -446,6 +446,8 @@ header .wrapper .imageContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   background-color: #a82706;
   bottom: 15px;
 }
@@ -476,7 +478,7 @@ header .wrapper .imageContainer {
   right: 15px;
 }
 .travel .textContainer {
-  padding: 50px 65px 50px 10%;
+  padding: 0px 65px 50px 10%;
   text-align: right;
 }
 
@@ -748,3 +750,120 @@ footer p {
 }
 
 /* 320px mobile devices */
+@media (max-width: 320px) {
+  html {
+    font-size: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4,
+h5 {
+    font-size: 1rem;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  nav ul span {
+    display: none;
+  }
+  header img {
+    display: none;
+  }
+  header h1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .favorite .flexContainer,
+.travel .flexContainer {
+    display: none;
+  }
+  .favorite .textContainer,
+.travel .textContainer {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .about {
+    padding: 0;
+  }
+  .about ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+  .about ul li {
+    width: 100%;
+  }
+  .about ul li .iconContainer {
+    padding: 10px;
+  }
+  figure {
+    display: none;
+  }
+  .journey .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journey .wrapper .imageContainer,
+.journey .wrapper .textContainer {
+    width: 90%;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .contactHeader,
+.blogHeader {
+    height: 100px;
+  }
+  .contactHeader h1,
+.blogHeader h1 {
+    bottom: -60px;
+  }
+  .contactHeader .contactPage,
+.blogHeader .contactPage {
+    padding: 0;
+  }
+  .contactHeader .contactPage .wrapper,
+.blogHeader .contactPage .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactHeader .contactPage .wrapper .contactInfoContainer,
+.blogHeader .contactPage .wrapper .contactInfoContainer {
+    width: 100%;
+  }
+}

@@ -1,5 +1,115 @@
 /* 320px mobile devices */
 @media (max-width: 320px){
+    html {
+            font-size: 100%;
+        }
+    .wrapper {
+        width: 100%;
+    }
 
-    
+    button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4, 
+    h5 {
+        font-size: 1rem;
+    }
+    nav {
+        ul {
+            flex-direction: column;
+            align-items: flex-end;
+            span {
+                display: none;
+            }
+        }
+    }
+   header {
+        img {
+            display: none;
+        } 
+        h1 {
+            position: relative;
+                top: 0px;
+                left: 0px;
+        }
+    }
+
+   .favorite,
+   .travel{
+        .flexContainer {
+            display: none;
+        }
+        .textContainer {
+        width: 100%;
+        padding: 10px 0;
+        }
+   }
+   .about {
+    padding: 0;
+    ul {
+        flex-direction: column;
+        padding-left: 0;
+        li {
+            width: 100%;
+            .iconContainer {
+                padding: 10px;
+            }
+        }
+    }
+   }
+   figure {
+    display: none;
+   }
+   .journey {
+        .wrapper {
+            flex-direction: column;
+            .imageContainer,
+            .textContainer {
+                width: 90%;
+            }
+            
+        }
+   }
+   .gallery {
+    ul {
+        flex-direction: column;
+        li {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+   }
+   .contactHeader,
+   .blogHeader {
+    height: 100px;
+    h1{
+        bottom: -60px;
+    }
+    .contactPage {
+        padding: 0;
+        .wrapper {
+            flex-direction: column;
+            .contactInfoContainer {
+                width: 100%;
+                }
+        }
+    }
+   }
+
+
 }
+    
+
+
