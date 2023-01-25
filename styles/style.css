@@ -562,7 +562,7 @@ footer p {
 
 .contactPage {
   background-color: rgb(240, 239, 237);
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .contactPage .wrapper {
   display: -webkit-box;
@@ -573,7 +573,8 @@ footer p {
           justify-content: space-between;
 }
 .contactPage .wrapper .contactInfoContainer {
-  width: 40%;
+  width: 30%;
+  max-width: 360px;
   height: 320px;
   background-color: white;
   padding: 20px;
@@ -593,7 +594,7 @@ footer p {
 }
 .contactPage .wrapper .formContainer {
   padding-left: 30px;
-  width: 60%;
+  width: 70%;
 }
 .contactPage .wrapper .formContainer .contactForm .inputInSameLine {
   display: -webkit-box;
@@ -609,9 +610,11 @@ footer p {
   padding: 20px;
   width: 49%;
   margin-bottom: 20px;
+  font-style: italic;
 }
 .contactPage .wrapper .formContainer .contactForm textarea {
   padding: 30px 20px;
+  font-style: italic;
 }
 .contactPage .wrapper .formContainer .contactForm textarea,
 .contactPage .wrapper .formContainer .contactForm button {
@@ -665,6 +668,7 @@ footer p {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #f6a823;
+  margin-bottom: 35px;
 }
 .blogPage .wrapper article div {
   margin-bottom: 20px;
@@ -690,6 +694,9 @@ footer p {
 .blogPage .wrapper article .blogComment .textContainer h5 {
   margin-top: 0;
 }
+.blogPage .wrapper article .formContainer {
+  margin-bottom: 50px;
+}
 .blogPage .wrapper article .formContainer .contactForm .inputInSameLine {
   background-color: rgb(240, 239, 237);
   padding: 0;
@@ -706,9 +713,11 @@ footer p {
   padding: 20px;
   width: 48%;
   margin: 20px 0 0 0;
+  font-style: italic;
 }
 .blogPage .wrapper article .formContainer .contactForm textarea {
   padding: 30px 20px;
+  font-style: italic;
 }
 .blogPage .wrapper article .formContainer .contactForm textarea,
 .blogPage .wrapper article .formContainer .contactForm button {

@@ -36,6 +36,7 @@
                     border-bottom-width: 5px;
                     border-bottom-style: solid;
                     border-bottom-color: $primary;
+                    margin-bottom: 35px;
                 }
                 div {
                     margin-bottom: 20px;
@@ -44,8 +45,7 @@
                 }          
                 .blogComment {
                         display: flex;
-                        // justify-content: space-between;
-                        // align-items: center;
+                        
                         h5 {
                             color: $buttonSelectedColor;
                         }
@@ -65,7 +65,7 @@
 
 
            .formContainer { 
-
+                margin-bottom: 50px;
                .contactForm {
                 
                    .inputInSameLine {
@@ -81,10 +81,12 @@
                        padding: 20px;
                        width: 48%;
                        margin: 20px 0 0 0;
+                       font-style: italic;
                    }
 
                    textarea {
                        padding: 30px 20px;
+                       font-style: italic;
                    }
 
                    textarea,

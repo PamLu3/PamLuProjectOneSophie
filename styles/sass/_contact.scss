@@ -16,14 +16,15 @@
     }
     .contactPage {
         background-color: $secondary;
-        padding-top: 100px;
+        padding: 100px 0;
 
         .wrapper {
             display: flex;
             justify-content: space-between;
     
             .contactInfoContainer {
-                width: 40% ;
+                width: 30% ;
+                max-width: 360px;
                 height: 320px;
                 background-color: white;
                 padding: 20px;
@@ -38,7 +39,7 @@
             }
             .formContainer {
                 padding-left: 30px;
-                width: 60%;
+                width: 70%;
                 .contactForm {
                     
                     .inputInSameLine {
@@ -51,9 +52,11 @@
                         padding: 20px;
                         width: 49%;
                         margin-bottom: 20px;
+                        font-style: italic;
                     }
                     textarea {
                         padding: 30px 20px;
+                        font-style: italic;
                     }
                     textarea,
                     button {
