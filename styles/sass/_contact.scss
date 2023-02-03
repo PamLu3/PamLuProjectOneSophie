@@ -31,10 +31,11 @@
                 .iconContainer{
                     display: flex;
                     flex-direction: row;
-                    img {
+                    a {
                         display: block;
-                        padding: 20px 20px 10px 0;
+                        padding: 20px 20px 10px 0;        
                     }
+                    
                 }
             }
             .formContainer {
