@@ -772,7 +772,7 @@ footer p {
     font-size: 1.2rem;
   }
   h4,
-h5 {
+  h5 {
     font-size: 1rem;
   }
   nav ul {
@@ -796,11 +796,11 @@ h5 {
     left: 0px;
   }
   .favorite .flexContainer,
-.travel .flexContainer {
+  .travel .flexContainer {
     display: none;
   }
   .favorite .textContainer,
-.travel .textContainer {
+  .travel .textContainer {
     width: 100%;
     padding: 10px 0;
   }
@@ -830,7 +830,7 @@ h5 {
             flex-direction: column;
   }
   .journey .wrapper .imageContainer,
-.journey .wrapper .textContainer {
+  .journey .wrapper .textContainer {
     width: 90%;
   }
   .gallery ul {
@@ -844,26 +844,26 @@ h5 {
     margin: 5px 0;
   }
   .contactHeader,
-.blogHeader {
+  .blogHeader {
     height: 100px;
   }
   .contactHeader h1,
-.blogHeader h1 {
+  .blogHeader h1 {
     bottom: -60px;
   }
   .contactHeader .contactPage,
-.blogHeader .contactPage {
+  .blogHeader .contactPage {
     padding: 0;
   }
   .contactHeader .contactPage .wrapper,
-.blogHeader .contactPage .wrapper {
+  .blogHeader .contactPage .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .contactHeader .contactPage .wrapper .contactInfoContainer,
-.blogHeader .contactPage .wrapper .contactInfoContainer {
+  .blogHeader .contactPage .wrapper .contactInfoContainer {
     width: 100%;
   }
 }

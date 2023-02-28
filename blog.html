@@ -92,5 +92,66 @@
             <p>Copyright &copy; 2018 HackerYou</p>
         </div>
     </footer>
+
+<script>
+    // target the form
+    const form = document.querySelector('form');
+    // listen for the submit event on that form
+    form.addEventListener('submit', function(event){
+        // prevent the default action of page reloading (we don't have and action attribute on the form right now)
+        event.preventDefault();
+
+        // target the input name
+        const inputName = document.getElementById('name');
+        // find out what is in the input name
+        const name = inputName.value;
+
+       // target the input email
+        const inputEmail = document.getElementById('email');
+        // find out what is in the input email
+        const email = inputEmail.value;
+
+        // target the input message
+        const inputMessage = document.getElementById('message');
+        // find out what is in the input message
+        const message = inputMessage.value;
+
+        // add the new comment to display in blogComment page
+        // create a div item
+        const divBlogComment = document.createElement('div');
+        divBlogComment.classList.add('blogComment');
+        divBlogComment.classList.add('comment03');
+
+        const divImageContainer = document.createElement('div');
+        divImageContainer.classList.add('imageContainer');
+        divImageContainer.innerHTML = '<img src="./assets/blog-image-4.jpg" alt="photo of Julia">';
+
+        const divTextContainer = document.createElement('div');
+        divTextContainer.classList.add('textContainer');
+        
+        const dayTimeName = document.createElement('span');
+        dayTimeName.textContent = `${Date()} by ${name}`
+        const messageText = document.createElement('p');
+        messageText.textContent = message;
+        
+        divTextContainer.appendChild(dayTimeName);
+        divTextContainer.appendChild(messageText);
+        divBlogComment.appendChild(divImageContainer);
+        divBlogComment.appendChild(divTextContainer);
+        
+        // target last sibbling in comments
+        const divBlog = document.querySelector('.blogContent');
+        divBlog.insertAdjacentElement("afterend", divBlogComment);
+
+        
+
+        // clear the input
+        inputName.value = '';
+        inputEmail.value = '';
+        inputMessage.value = '';
+    
+    });
+    
+</script>
 </body>
 </html>
